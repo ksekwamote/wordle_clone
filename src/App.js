@@ -19,14 +19,17 @@ function App() {
   }
 
   function pressEnter(){
+    if(currentRow > 5) return alert('You have unfortunately exhausted all your trials. Press refresh to try again. ')
     if(guessWord.length<5) return
     if(!dictionary.includes(guessWord.toLocaleLowerCase())) return alert('Word not found')
     if(guessWord === word) alert('Congratulations you got it')
-
-    console.log('Pressed Enter')
+    
+    console.log('Pressed Enter' + currentRow)
     setCurrentRow(currentRow+1)
     setCompletedRows([...completedRows ,currentRow])
     setGuessWord('')
+    
+
   }
 
   function backspace(){

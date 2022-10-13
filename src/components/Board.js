@@ -13,7 +13,7 @@ export default function Board() {
             <small className='m-5' >#Refresh Page to play again with different word.</small>
             <small className='rotate-180 text-[4px]' > {word} </small>
 
-          
+          <h4>Source Code: <a className='text-blue-400 hover:text-decoration-line' href='https://github.com/ksekwamote/wordle_clone.git'>https://github.com/ksekwamote/wordle_clone.git</a></h4>
             <div className="m-10">
             <h2 className='text-center font-bold' >My Journey Of Creating The Wordle Game</h2>
                 <iframe
